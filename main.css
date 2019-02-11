@@ -210,6 +210,10 @@ img {
     z-index: -1;
 }
 
+.cool-text {
+    font-family: Consolas;
+}
+
 
 
 .progress-bar:first-child:after {
