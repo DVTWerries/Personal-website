@@ -140,7 +140,6 @@ img {
 
 .carousel .carousel-content:hover {
     animation-play-state: paused;
-    
 }
 
 .carousel-content-item:hover{
@@ -162,11 +161,11 @@ img {
 
 .progress-bar {
     counter-reset: step;
+    display: flex;
+    flex-direction: row;
 }
 
 .progress-bar-item{
-    display: inline-flex;
-    flex-direction: column-reverse;
     list-style-type: none;
     width: 24%;
     font-size: 12px;
@@ -209,31 +208,29 @@ img {
     font-family: Consolas;
 }
 
-.content1{
-    opacity: 0;
-}
-
-.content2{
+.content{
     opacity: 0;
 }
 
 .cart-content-holder{
-    width: 600px;
+    display: flex;
+    flex-direction: row;
     max-height: 250px;
-    margin: 15%;
-    display: inline-flex;
-    text-align: center;
+    margin: 5%;
+}
+
+.cart-content-holder .cart img{
+    margin: 0;
+    border: none;
+    z-index: -1;
 }
 
 .cart{
-    width: 180px;
+    width: 30%;
+    display: flex;
     margin-left: 10px;
     border-radius: 2px;
-    border: 2px solid aqua;
-}
-
-.cart h2{
-    margin: 90px auto;
+    text-align: center;
 }
 
 .cart:hover{
