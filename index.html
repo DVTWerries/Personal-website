@@ -5,6 +5,7 @@
 <head>
     <title>Werner's website</title>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="logic.js"></script>
 </head>
 
 <body>
@@ -16,10 +17,10 @@
             </div>
             <hr>
             <ul>
-                <li tabindex="0" class="icon-dashboard"><span>About me</span></li>
-                <li tabindex="0" class="icon-customers"><span>Skills</span></li>
-                <li tabindex="0" class="icon-users"><span>Interest</span></li>
-                <li tabindex="0" class="icon-settings"><span>What I love</span></li>
+                <li tabindex="0" class="icon-dashboard" onclick="DisplayAboutMe()"><span>About me</span></li>
+                <li tabindex="0" class="icon-customers" onclick="DisplaySkills()"><span>Skills</span></li>
+                <li tabindex="0" class="icon-users" onclick="DisplayInterest()"><span>Interest</span></li>
+                <li tabindex="0" class="icon-settings" onclick="DisplayWhatILove()"><span>What I love</span></li>
             </ul>
             <hr>
             <div class="social-media-container">

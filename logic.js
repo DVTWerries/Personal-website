@@ -1,18 +1,55 @@
-var cart = document.getElementsByClassName("cart");
-var carouselItem = document.getElementsByClassName("carousel-content-item");
-var carousel = document.getElementsByClassName("carousel");
-var content1 = document.getElementsByClassName("content1");
-var content2 = document.getElementsByClassName("content2");
+var aboutMe = document.getElementsByClassName().classList;
+var skill = document.getElementsByClassName().classList;
+var interest = document.getElementsByClassName().classList;
+var whatILove = document.getElementsByClassName().classList;
 
-function displayContent() {
-    if(cart !== null) {
-        
+function DisplayAboutMe() {
+    if(aboutMe.style == "") {
+
     }
     else{
 
     }
 }
 
-function closeContent() {
+function DisplaySkill() {
+    if(skill.style == "") {
 
+    }
+    else{
+
+    }
+}
+
+function DisplayInterest() {
+    if(interest.style == "") {
+
+    }
+    else {
+
+    }
+}
+
+function DisplayWhatILove() {
+    if(whatILove.style == "") {
+
+    }
+    else{
+
+    }
+}
+
+function RemoveOtherStyle() {
+    if(aboutMe.style == "") {
+
+    }
+    else if(skill.style == "") {
+
+    }
+    else if(interest.style == "") {
+
+    }
+    else{
+
+    }
 }
