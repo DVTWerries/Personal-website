@@ -180,35 +180,6 @@ img {
     color: #7d7d7d;
 }
 
-.progress-bar-item:before {
-    width: 30px;
-    height: 30px;
-    content: counter(step);
-    counter-increment: step;
-    line-height: 30px;
-    border: 2px solid #7d7d7d;
-    display: block;
-    text-align: center;
-    margin: 0 auto 10px auto;
-    border-radius: 50%;
-    background-color: white;
-}
-
-.progress-bar-item:after {
-    width: 100%;
-    height: 2px;
-    content: '';
-    position: absolute;
-    background-color: #7d7d7d;
-    top: 15px;
-    left: -50%;
-    z-index: -1;
-}
-
-.progress-bar-item:first-child:after{
-    content: none;
-}
-
 .cool-text {
     font-family: Consolas;
 }
@@ -263,4 +234,99 @@ img {
 
 .cart:hover{
     transform: rotateY(180deg);
+}
+
+.bio{
+    grid-column: 2;
+    display: grid;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.bio p{
+    grid-column: 2;
+    grid-row: 1;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 70px;
+}
+
+.menu .avatar {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 2em 0.5em;
+  text-align: center;
+}
+
+.menu .avatar h1{
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.menu .avatar img{
+    grid-column: 1;
+    grid-row: 1;
+    border-radius: 300px;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.menu{
+  grid-column: 1;
+	background: #5bc995;
+	height: 100vh;
+  outline:none;
+}
+
+.menu ul{
+		list-style:none;
+		padding:0.5em 0;
+		margin:0;
+}
+
+.menu ul li{
+    padding:0.5em 1em 0.5em 3em;
+		font-size:0.95em;
+		font-weight:regular;
+		background-repeat:no-repeat;
+		background-position:left 15px center;
+		background-size:auto 20px;
+		transition:all 0.15s linear;
+		cursor:pointer;
+}
+
+.menu ul li.icon-dashboard {
+  background-image: url("images/iconfinder_user-account-profile-human-avatar-face-head-_2931147.svg");
+}
+.menu ul li.icon-customers {
+  background-image: url("images/iconfinder_edit-change-pencil_2931178.svg");
+}
+.menu ul li.icon-users {
+  background-image: url("images/iconfinder_paste-clipboard-copy_2931174.svg");
+}
+.menu ul li.icon-settings {
+  background-image: url("images/iconfinder_minus-remove-delete-minimize_2931142.svg");
+}
+
+.social-media{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-gap: 5%;
+  margin: auto;
+}
+
+.social-media img{
+  border: 0px;
+}
+
+.menu ul li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.menu ul li:focus {
+  outline: none;
 }
