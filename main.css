@@ -350,12 +350,22 @@ hr{
   max-height: 20%;
 }
 
+.display-elememt{
+  text-align: center;
+  border-radius: 20px;
+  animation: display 10s forwards;
+}
+
+.remove-element{
+  animation: remove 10s forwards;
+}
+
 @keyframes display{
   0% { transform: translateY(0%); }
   100% { transform: translateY(50%); }
 }
 
 @keyframes remove{
-  0% { transform: translateX(50%); }
-  100% { transform: translateX(100%); }
+  0% { transform: translateY(50%); }
+  100% { transform: translateY(100%); }
 }
