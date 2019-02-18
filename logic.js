@@ -1,53 +1,47 @@
-var aboutMe = document.getElementsByClassName().classList;
-var skill = document.getElementsByClassName().classList;
-var interest = document.getElementsByClassName().classList;
-var whatILove = document.getElementsByClassName().classList;
-
 function DisplayAboutMe() {
-    if(aboutMe.style == "") {
-
-    }
-    else{
-
-    }
+    var aboutMe = document.getElementById("one").classList;
+    RemoveOtherStyle();
+    aboutMe.add("display");
 }
 
-function DisplaySkill() {
-    if(skill.style == "") {
-
-    }
-    else{
-
-    }
+function DisplaySkills() {
+    var skill = document.getElementById("two").classList;
+    RemoveOtherStyle();
+    skill.add("display");
 }
 
 function DisplayInterest() {
-    if(interest.style == "") {
-
-    }
-    else {
-
-    }
+    var interest = document.getElementById("three").classList;
+    RemoveOtherStyle();
+    interest.add("display");
 }
 
 function DisplayWhatILove() {
-    if(whatILove.style == "") {
-
-    }
-    else{
-
-    }
+    var whatILove = document.getElementById("forth").classList;
+    RemoveOtherStyle();
+    whatILove.add("display");
 }
 
 function RemoveOtherStyle() {
-    if(aboutMe.style == "") {
-
+    var aboutMe = document.getElementById("one").classList;
+    var skill = document.getElementById("two").classList;
+    var interest = document.getElementById("three").classList;
+    var whatILove = document.getElementById("forth").classList;
+    if(aboutMe.contains("display")) {
+        aboutMe.remove("display");
+        aboutMe.add("remove");
     }
-    else if(skill.style == "") {
-
+    else if(skill.contains("display")) {
+        skill.remove("display");
+        skill.add("remove");
     }
-    else if(interest.style == "") {
-
+    else if(interest.contains("display")) {
+        interest.remove("display");
+        interest.add("remove");
+    }
+    else if(whatILove.contains("display")) {
+        whatILove.remove("display");
+        whatILove.add("remove");
     }
     else{
 

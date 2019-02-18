@@ -349,3 +349,13 @@ hr{
   width: 20%;
   max-height: 20%;
 }
+
+@keyframes display{
+  0% { transform: translateY(0%); }
+  100% { transform: translateY(50%); }
+}
+
+@keyframes remove{
+  0% { transform: translateX(50%); }
+  100% { transform: translateX(100%); }
+}
